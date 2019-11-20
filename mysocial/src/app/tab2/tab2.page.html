@@ -1,0 +1,26 @@
+<ion-header>
+<ion-toolbar color="primary">
+<ion-title class="top">Send post</ion-title>
+</ion-toolbar>
+<ion-card>
+<!-- <ion-card-header>
+
+</ion-card-header> -->
+<ion-content class="background"></ion-content>
+<ion-card-content>
+<ion-item>
+<ion-label position="stacked">Message</ion-label>
+<ion-input [(ngModel)]="model.message" name="message"></ion-input>
+</ion-item>
+<ion-item>
+<ion-label position="stacked">Image url</ion-label>
+<ion-input [(ngModel)]="model.imageUrl" name="imageUrl"></ion-input>
+</ion-item>
+<ion-button (click)="sendPost();" expand="block" size="medium" color="primary" size="small">post</ion-button>
+</ion-card-content>
+</ion-card>
+
+
+
+
+

@@ -1,0 +1,26 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-title class="top">News</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    
+  <!-- there is {{ getPostsToDisplay().length }} Post -->
+
+  <ion-card *ngFor="let post of postsToShow" class="post">
+
+      <ion-card-header>
+          <ion-card-subtitle  class="post" >{{ post.from }}</ion-card-subtitle>
+          <ion-card-content *ngIf="post.imageUrl" class="post">
+            <img class="img1"src="{{post.imageUrl}}">
+            <ion-card-subtitle  class="message" >{{post.message}}</ion-card-subtitle>
+            </ion-card-content>
+          
+          <!-- <ion-card-title  class="date" >{{post.createdOn | date: 'MM-dd-yyyy hh:mm:ss' }}</ion-card-title> -->
+           </ion-card-header>
+
+      
+    </ion-card>
+  </ion-content>
+
